@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 203, 254, 1) 0%,
+    rgba(228, 235, 253, 1) 50%,
+    rgba(253, 224, 226, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0px 30px;
+}
+
+.container__calc {
+  background: #e9e9f4;
+  border: 3px solid white;
+  border-radius: 40px;
+  color: white;
+  min-height: 600px;
+  padding: 30px 30px 30px;
+  width: 400px;
+}
+
+.container__calc--result {
+  border-radius: 20px;
+  background-color: #f3f2f7;
+  height: 200px;
+  width: 33 0px;
+}
+
+.container-numbers {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fill, 64px);
+  margin-top: 20px;
+  place-content: center;
+}
+
+.container-numbers .number {
+  background-color: #f2f0f5;
+  border: 1px solid white;
+  border-radius: 13px;
+  color: #bebaf8;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 500;
+  height: 60px;
+  padding: 12px;
+  text-align: center;
+  width: 60px;
+}
+
+.container-numbers .number:nth-child(19) {
+  background-color: #bebaf8;
+  color: white;
+  width: 150px;
+}
+
+.container-numbers .operators {
+  background-color: #febaa5;
+  color: white;
+}
+
+.container-numbers .operatorsMath {
+    background-color: #fdbfbf;
+    color: white;
+}
