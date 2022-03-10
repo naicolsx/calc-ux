@@ -12,31 +12,33 @@
 <body>
     <section class="container">
         <section class="container__calc">
-            <div class="container__calc--result">
+            <div class="container__calc--result" id="containerResult">
+                <div class="result" id="resultNumber"></div>
             </div>
             <div class="container-numbers">
                 <div class="number operators">AC</div>
                 <div class="number operators">+</div>
                 <div class="number operators">%</div>
-                <div class="number operatorsMath">/</div>
-                <div class="number">7</div>
-                <div class="number">8</div>
-                <div class="number">9</div>
-                <div class="number operatorsMath">X</div>
-                <div class="number">4</div>
-                <div class="number">5</div>
-                <div class="number">6</div>
-                <div class="number operatorsMath">-</div>
-                <div class="number">1</div>
-                <div class="number">2</div>
-                <div class="number">3</div>
-                <div class="number operatorsMath">+</div>
-                <div class="number">0</div>
+                <div class="number operatorsMath" onclick="Division()">/</div>
+                <div class="number" value="7">7</div>
+                <div class="number" value="8">8</div>
+                <div class="number" value="9">9</div>
+                <div class="number operatorsMath" onclick="Multiplication()">X</div>
+                <div class="number" value="4">4</div>
+                <div class="number" value="5">5</div>
+                <div class="number" value="6">6</div>
+                <div class="number operatorsMath" onclick="Subtract()">-</div>
+                <div class="number" value="1">1</div>
+                <div class="number" value="2">2</div>
+                <div class="number" value="3">3</div>
+                <div class="number operatorsMath" onclick="Sum()">+</div>
+                <div class="number" value="3">0</div>
                 <div class="number">,</div>
                 <div class="number">=</div>
             </div>
         </section>
     </section>
+    <script src="./js/calculator.js"></script>
 </body>
 
 </html>
